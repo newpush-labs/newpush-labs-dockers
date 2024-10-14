@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  tty2web:
+    image: lracz/tty2web:latest
+    ports:
+      - "8080:8080"
+    command: ["-w", "top"]
